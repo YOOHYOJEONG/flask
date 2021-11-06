@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Preprocessing Pasge UI</title>
+	</head>
+
+	<body>
+
+		<form action = "/get_selected_table" meothe= "POST" enctype= "multipart/form-data">
+			<h1>Selecting kind of image preprocessing</h1>
+			<input type='checkbox' name='pre_toggle_0'>
+			<span>rotating 180 degree</span>
+			<br>
+			<input type='checkbox' name='pre_toggel_1'>
+			<span>changing to black and white</span>
+			<br>
+			<input type="checkbox" name='pre_toggle_2'>
+			<span>resizing image</span>
+			<br>
+			<button type='submit'>Change</button>
+		</form>
+
+		<form action="/upload_image" method="POST" enctype='multipart/form-data'>
+			<h1>Upload Image</h1>
+			<input type='file' name='uploaded_image'>
+			<button>Upload image</button>
+			{% if label %}
+				<span>
+					{{ label }}
+				</span>
+			{% endif %}
+		</form>
+	</body>
+
+</html>
+
