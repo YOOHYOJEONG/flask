@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Goodbye 2020 </title>
+
+
+    <link rel="shortcut icon" href="https://freepngimg.com/download/christmas/26196-6-christmas-stocking.png">
+    
+    <meta property="og:image" content="https://www.christmastreeassociation.org/wp-content/uploads/2016/06/multiple-christmas-trees-in-one-household-800x400.jpg">
+    <meta property="og:title" content="효정이가 보내는 메시지 카드">
+    <meta property="og:description" content="Goddbye 2020 -From.효정">
+
+    <script src="https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/snow.js"></script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Jua&family=Noto+Serif+KR:wght@600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Black Han Sans', sans-serif;
+            font-family: 'Jua', sans-serif;
+            font-family: 'Noto Serif KR', serif;
+        }
+
+        body {
+            background-color: #9b070f;
+        }
+
+        .envelope {
+
+            width: 200px;
+            height: 200px;
+
+            background-image: url("https://pngimg.com/uploads/envelope/envelope_PNG18366.png");
+            background-size: cover;
+            background-position: center;
+
+            margin: 200px auto 0px auto;
+
+            cursor : pointer;
+        }
+
+        .envelope-msg {
+            color: white;
+            text-align: center;
+
+        }
+
+        .letter-close {
+            display: block;
+        }
+
+
+        .letter-open{
+            display: none;
+        }
+        .rtan {
+
+            background-color: white;
+            width: 200px;
+            height: 200px;
+
+            background-image: url('https://s3.ap-northeast-2.amazonaws.com/materials.spartacodingclub.kr/xmas/rtan.gif');
+            background-size: cover;
+            background-position: center;
+
+            margin: 80px auto 0px auto;
+
+            border-radius: 100px;
+
+            border: 3px solid white;
+
+            box-shadow: 0px 0px 10px 8px white;
+
+            cursor : pointer;
+
+
+        }
+
+        .msg {
+            color: white;
+
+            text-align: center;
+            font-size: 25px;
+
+            margin-top: 40px;
+            margin-bottom: 40px;
+        }
+
+        .msg-box {
+            color: brown;
+
+            text-align: center;
+
+            background-color: ivory;
+            width: 350px;
+
+            margin: auto;
+
+            padding: 30px;
+
+            font-size: 20px;
+
+            line-height: 35px;
+
+
+
+            box-shadow: 0px 0px 10px 5px white;
+        }
+
+        .from {
+            text-align: right;
+
+            margin-bottom: 0px;
+        }
+
+        @media screen and (max-width: 760px) {
+            .msg-box {
+                width: 300px;
+                padding: 20px;
+
+                .rtan {
+                    width: 150px;
+                    height: 150px;
+                    margin: 70px auto 0px auto;
+
+                }
+
+                .msg {
+                   
+                    font-size: 23px;
+                   
+                }
+
+                .envelope {
+   
+                    margin: 150px auto 0px auto;
+}
+
+            }
+    </style>
+
+    <script>
+        function open_letter() {
+            document.getElementsByClassName("letter-close")[0].style.display = 'none'
+            document.getElementsByClassName("letter-open")[0].style.display = 'block'
+
+        
+        }
+
+        function go_rtan(){
+            alert('캐롤송으로 연결됩니다.');
+            window.location.href = 'https://youtu.be/DFH2NpzgQ2E';
+        }
+    </script>
+
+</head>
+
+
+
+<div class="letter-close">
+    <div class="envelope" onclick="open_letter()"> </div>
+    <h2 class="envelope-msg"> 봉투를 열어보세요. </h2>
+</div>
+
+<idv class='letter-open'>
+    <div class="rtan" onclick="go_rtan()">
+
+    </div>
+
+    <h1 class='msg'> 2020년 수고 많으셨습니다. </h1>
+
+    <div class='msg-box'>
+        친구들에게. <br />
+        올해 코로나로 다들 힘들었을텐데 <br />
+        고생많았다잉 9ㅁ9 <br />
+        내년엔 우리도 여행가자ㅏㅏ <br />
+        2020년 수고 많았어~,~ <br />
+        <p class="from">
+            2020.12.29 효정이가
+        </p>
+    </div>
+</idv>
+
+<body>
+
+</body>
+
+</html>
